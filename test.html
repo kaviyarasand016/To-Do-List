@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="int">
+<button id="btn">btn</button> 
+<p id="demo"></p>
+
+<script>
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', ()=>{
+      const int = document.getElementById('int').value;
+      console.log(int);
+
+  })
+
+  const load = setTimeout(btn.removeEventListener('click', ()=>{
+    const int = document.getElementById('int').value;
+    console.log(int);
+  }), 5000)
+
+</script>
+
+</body>
+</html>
